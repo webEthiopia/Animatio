@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniamatio - the smart comminucation place for everyone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-opague.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-image: linear-gradient(135deg , black 30%, navy 70%);
+            font-family: Roboto,Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            text-align: center;
+            width: 320px;
+        }
+        h1 {
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0;
+        }
+        
+        p {
+            color: #aaa;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+            border: none;
+            border-radius: 6px;
+            background: #1877f2;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-weight: 700;
+        }
+        .btn.signup {
+            background: #42b72a;
+        }
+        .btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            margin-top: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            justify-content: center;
+        }
+        .download{
+            border-radius: 10px;
+            background-color: white;
+            color: #42b72a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+        }
+        .download img , .download i{
+            margin: 0 10px;
+        }
+        .downloadContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .downloadContainer .btn{
+            font-weight: normal;
+            width: auto;
+            font-size: 30px;
+            padding: 15px;
+            transition: .2s ease;
+        }
+        .downloadContainer .btn:hover{
+            transform:  translateY(-10px);
+        }
+        .win{
+            background-color: rgb(5, 0, 32);
+            color: #1877f2;
+        }
+        .apple{
+            background-image: linear-gradient(135deg,rgb(5, 0, 32) 30%,rgb(13, 1, 76) 70%);
+        }
+        .linux{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        .download.apple{
+            color: crimson;
+            background-color: white;
+            background-image: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <h1>Welcome!</h1>
+        </div>
+        <p>Connect with friends and the world around you.</p>
+        <div id="buttons">
+            <button class="btn login">Log In</button>
+            <button class="btn signup">Sign Up</button>
+        </div>
+        <div id="desktop">
+            <p>download</p>
+            <div class="downloadContainer">
+                <button class="btn win">
+                    <i class="fa-brands fa-windows"></i>
+                </button>
+                <button class="btn apple">
+                    <i class="fa-brands fa-apple"></i>
+                </button>
+                <button class="btn linux">
+                    <i class="fa-brands fa-linux"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Aniamatio
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
